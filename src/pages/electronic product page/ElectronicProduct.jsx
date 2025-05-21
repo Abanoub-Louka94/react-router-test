@@ -6,9 +6,9 @@ export default function ProductPage() {
 			<section className="container">
 				<Navbar />
 				<section className="products">
-					<ul className="prducts-container">
+					<section className="prducts-container">
 						<Outlet />
-					</ul>
+					</section>
 				</section>
 			</section>
 		</main>
