@@ -13,11 +13,12 @@ createRoot(document.getElementById("root")).render(
 		<Routes>
 			<Route path="/" element={<App />} />
 			<Route path="homepage" element={<Home />} />
-			<Route path="products" element={<Products />} />
+			<Route path="products" element={<Products />}>
+				<Route path="foodProdcut" element={<FoodPage />} />
+				<Route path="electronicProdcut" element={<ElectronicPage />} />
+				<Route path="cosmaticProdcut" element={<CosmeticPage />} />
+			</Route>
 			<Route path="about" element={<About />} />
-			<Route path="foodProdcut" element={<FoodPage />} />
-			<Route path="electronicProdcut" element={<ElectronicPage />} />
-			<Route path="cosmaticProdcut" element={<CosmeticPage />} />
 		</Routes>
 	</BrowserRouter>
 );
