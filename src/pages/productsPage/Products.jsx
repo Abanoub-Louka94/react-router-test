@@ -27,7 +27,6 @@ export default function Products() {
 							</Link>
 						</li>
 					</ul>
-					<Outlet />
 				</section>
 			</section>
 		</main>

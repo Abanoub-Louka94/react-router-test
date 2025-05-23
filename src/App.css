@@ -31,15 +31,14 @@ nav {
 	padding: 1rem 0.5rem;
 }
 
+nav a {
+	color: white;
+}
 nav .navLinks ul {
 	column-gap: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-nav .navLinks ul li a {
-	color: white;
 }
 
 nav .navLinks ul li a.active {
