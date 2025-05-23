@@ -1,8 +1,8 @@
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 import Navbar from "../../components/navbar/Navbar";
 import CosmeticProduct from "../../components/products/cosmetic product/CosmeticProduct";
 import ElelctronicProduct from "../../components/products/electronic product/ElectronicProduct";
-import FoodProduct from "../../components/products/electronic product/ElectronicProduct";
+import FoodProduct from "../../components/products/food product/FoodProduct";
 
 export default function Products() {
 	return (
@@ -12,21 +12,22 @@ export default function Products() {
 				<section className="products">
 					<ul className="prducts-container">
 						<li>
-							<Link to="cosmatic-prodcut">
+							<Link to="cosmaticProdcut">
 								<CosmeticProduct />
 							</Link>
 						</li>
 						<li>
-							<Link to="electronic-prodcut">
-								<ElelctronicProduct />
-							</Link>
-						</li>
-						<li>
-							<Link to="food-prodcut">
+							<Link to="foodProdcut">
 								<FoodProduct />
 							</Link>
 						</li>
+						<li>
+							<Link to="electronicProdcut">
+								<ElelctronicProduct />
+							</Link>
+						</li>
 					</ul>
+					<Outlet />
 				</section>
 			</section>
 		</main>

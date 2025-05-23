@@ -1,14 +1,12 @@
-import { Outlet } from "react-router";
-
+import CosmeticProduct from "../../components/products/cosmetic product/CosmeticProduct";
+import Navbar from "../../components/navbar/Navbar";
 export default function CosmeticPage() {
 	return (
 		<main className="page">
 			<section className="container">
 				<Navbar />
 				<section className="products">
-					<section className="prducts-container">
-						<Outlet />
-					</section>
+					<CosmeticProduct />
 				</section>
 			</section>
 		</main>

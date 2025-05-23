@@ -1,14 +1,12 @@
-import { Outlet } from "react-router";
-
-export default function ProductPage() {
+import ElelctronicProduct from "../../components/products/electronic product/ElectronicProduct";
+import Navbar from "../../components/navbar/Navbar";
+export default function ElectronicProductPage() {
 	return (
 		<main className="page">
 			<section className="container">
 				<Navbar />
 				<section className="products">
-					<section className="prducts-container">
-						<Outlet />
-					</section>
+					<ElelctronicProduct />
 				</section>
 			</section>
 		</main>
