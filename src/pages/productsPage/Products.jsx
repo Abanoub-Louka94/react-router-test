@@ -12,17 +12,17 @@ export default function Products() {
 				<section className="products">
 					<ul className="prducts-container">
 						<li>
-							<Link to="cosmaticProdcut">
+							<Link to="/cosmaticProdcut">
 								<CosmeticProduct />
 							</Link>
 						</li>
 						<li>
-							<Link to="foodProdcut">
+							<Link to="/foodProdcut">
 								<FoodProduct />
 							</Link>
 						</li>
 						<li>
-							<Link to="electronicProdcut">
+							<Link to="/electronicProdcut">
 								<ElelctronicProduct />
 							</Link>
 						</li>
