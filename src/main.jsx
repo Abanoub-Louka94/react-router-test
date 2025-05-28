@@ -11,13 +11,12 @@ import FoodPage from "./pages/food product page/FoodProductPage.jsx";
 createRoot(document.getElementById("root")).render(
 	<BrowserRouter>
 		<Routes>
-			<Route path="/" element={<App />} />
+			<Route index element={<App />} />
 			<Route path="homepage" element={<Home />} />
-			<Route path="products" element={<Products />}>
-				<Route path="foodProdcut" element={<FoodPage />} />
-				<Route path="electronicProdcut" element={<ElectronicPage />} />
-				<Route path="cosmaticProdcut" element={<CosmeticPage />} />
-			</Route>
+			<Route path="products" element={<Products />} />
+			<Route path="foodProdcut" element={<FoodPage />} />
+			<Route path="electronicProdcut" element={<ElectronicPage />} />
+			<Route path="cosmaticProdcut" element={<CosmeticPage />} />
 			<Route path="about" element={<About />} />
 		</Routes>
 	</BrowserRouter>
