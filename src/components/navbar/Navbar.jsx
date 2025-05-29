@@ -4,14 +4,14 @@ export default function Navbar() {
 	return (
 		<nav>
 			<section className="logo">
-				<Link to="/homepage">
+				<Link to="/">
 					<p>logo</p>
 				</Link>
 			</section>
 			<section className="navLinks">
 				<ul>
 					<li>
-						<NavLink to="/homepage" className="capitalized">
+						<NavLink to="/" className="capitalized">
 							home
 						</NavLink>
 					</li>
